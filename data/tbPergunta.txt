@@ -1,0 +1,78 @@
+object tbPerguntas: TFTable
+    FieldDefs = <
+      item
+        Name = 'COD_QUESTIONARIO'
+        Calculated = False
+        Updatable = False
+        PrimaryKey = True
+        FieldType = ftInteger
+        JSONConfig.NullOnEmpty = False
+        Caption = 'C'#243'd. Questionario'
+        WOwner = FrWizard
+        WOrigem = EhNone
+        lin = 2
+        col = 1
+      end
+      item
+        Name = 'COD_PERGUNTA'
+        Calculated = False
+        Updatable = False
+        PrimaryKey = True
+        FieldType = ftInteger
+        JSONConfig.NullOnEmpty = False
+        Caption = 'C'#243'd. Pergunta'
+        WOwner = FrWizard
+        WOrigem = EhNone
+        lin = 1
+        col = 1
+      end>
+    TableName = 'CRM_PERGUNTAS'
+    Cursor = 'CRM_PERGUNTAS'
+    MaxRowCount = 200
+    OnAfterScroll = tbPerguntasAfterScroll
+    WOwner = FrWizard
+    WOrigem = EhNone
+    WKey = '43904;43902'
+    DeltaMode = dmChanged
+    RatioBatchSize = 20
+    ModelType = mtCollectionModel
+  end
+object tbOpcao: TFTable
+    FieldDefs = <
+      item
+        Name = 'COD_OPCAO'
+        Calculated = False
+        Updatable = False
+        PrimaryKey = True
+        FieldType = ftInteger
+        JSONConfig.NullOnEmpty = False
+        Caption = 'C'#243'd. Questionario'
+        WOwner = FrWizard
+        WOrigem = EhNone
+        lin = 2
+        col = 1
+      end
+      item
+        Name = 'COD_PERGUNTA'
+        Calculated = False
+        Updatable = False
+        PrimaryKey = True
+        FieldType = ftInteger
+        JSONConfig.NullOnEmpty = False
+        Caption = 'C'#243'd. Pergunta'
+        WOwner = FrWizard
+        WOrigem = EhNone
+        lin = 1
+        col = 1
+      end>
+    TableName = 'CRM_PERGUNTAS'
+    Cursor = 'CRM_PERGUNTAS'
+    MaxRowCount = 200
+    OnAfterScroll = tbPerguntasAfterScroll
+    WOwner = FrWizard
+    WOrigem = EhNone
+    WKey = '43904;43902'
+    DeltaMode = dmChanged
+    RatioBatchSize = 20
+    ModelType = mtCollectionModel
+  end
