@@ -4,6 +4,7 @@ ABACAXI: {{data}}
 {% for field in data %}
 {% if field.FieldType == 'ftString' %}
 {{template_label.label(field) | indent(0, True)-}}
+
 {% endif %}
 {% endfor %}
 {% endmacro %}
