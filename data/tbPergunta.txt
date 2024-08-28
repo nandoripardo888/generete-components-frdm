@@ -5,12 +5,12 @@ object tbPerguntas: TFTable
         Calculated = False
         Updatable = False
         PrimaryKey = True
-        FieldType = ftInteger
+        FieldType = ftString
         JSONConfig.NullOnEmpty = False
         Caption = 'C'#243'd. Questionario'
         WOwner = FrWizard
         WOrigem = EhNone
-        lin = 2
+        lin = 1
         col = 1
       end
       item
@@ -18,13 +18,13 @@ object tbPerguntas: TFTable
         Calculated = False
         Updatable = False
         PrimaryKey = True
-        FieldType = ftInteger
+        FieldType = ftString
         JSONConfig.NullOnEmpty = False
         Caption = 'C'#243'd. Pergunta'
         WOwner = FrWizard
         WOrigem = EhNone
         lin = 1
-        col = 1
+        col = 2
       end>
     TableName = 'CRM_PERGUNTAS'
     Cursor = 'CRM_PERGUNTAS'
@@ -44,12 +44,12 @@ object tbOpcao: TFTable
         Calculated = False
         Updatable = False
         PrimaryKey = True
-        FieldType = ftInteger
+        FieldType = ftString
         JSONConfig.NullOnEmpty = False
         Caption = 'C'#243'd. Questionario'
         WOwner = FrWizard
         WOrigem = EhNone
-        lin = 2
+        lin = 1
         col = 1
       end
       item
@@ -57,13 +57,13 @@ object tbOpcao: TFTable
         Calculated = False
         Updatable = False
         PrimaryKey = True
-        FieldType = ftInteger
+        FieldType = ftString
         JSONConfig.NullOnEmpty = False
         Caption = 'C'#243'd. Pergunta'
         WOwner = FrWizard
         WOrigem = EhNone
         lin = 1
-        col = 1
+        col = 2
       end>
     TableName = 'CRM_PERGUNTAS'
     Cursor = 'CRM_PERGUNTAS'

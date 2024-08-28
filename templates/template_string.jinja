@@ -1,0 +1,41 @@
+{% macro label(data) %}
+object ed{{}}: TFString
+  Left = 77
+  Top = 0
+  Width = 224
+  Height = 24
+  Hint = ''
+  Table = {tabela}
+  FieldName = '{campo_tabela}'
+  HelpCaption = ''
+  Help = ''
+  TabOrder = 5
+  AccessLevel = 0
+  Flex = True
+  WOwner = FrInterno
+  WOrigem = EhNone
+  Required = False
+  Prompt = ''
+  Constraint.Expression = 'value is null or trim(value) = '#39#39
+  Constraint.Message = 'Campo {caption}, preenchimento '#233' obrigat'#243'rio'
+  Constraint.CheckWhen = cwImmediate
+  Constraint.CheckType = ctExpression
+  Constraint.FocusOnError = True
+  Constraint.GroupName = 'Detalhes'
+  Constraint.EnableUI = True
+  Constraint.Enabled = False
+  Constraint.FormCheck = True
+  IconDirection = idLeft
+  CharCase = ccNormal
+  Pwd = False
+  Maxlength = 100
+  Align = alLeft
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  SaveLiteralCharacter = False
+  TextAlign = taLeft
+end
+{% endmacro %}

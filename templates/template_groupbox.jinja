@@ -1,4 +1,4 @@
-{#% import 'template_row.jinja' as templateRow %#}
+{% import 'template_row.jinja' as template_row %}
 {% macro groupbox(data) %}
 {% for grupo in data%}
 object groupbox{{grupo.name}}: TFGroupbox
@@ -68,6 +68,7 @@ object groupbox{{grupo.name}}: TFGroupbox
     BorderRadius.BottomRight = 0
     BorderRadius.BottomLeft = 0
     ExplicitTop = 17
+{{template_row.row(grupo.FieldDefs) | indent(4, True)-}}
   end
 {% endfor %}
 {% endmacro %}
