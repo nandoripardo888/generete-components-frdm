@@ -1,10 +1,10 @@
 {% import 'template_label.jinja' as template_label %}
-{% macro field(data) %}
-ABACAXI: {{data}}
+{% import 'template_string.jinja' as template_string %}
+{% macro field(data, tabela) %}
 {% for field in data %}
 {% if field.FieldType == 'ftString' %}
-{{template_label.label(field) | indent(0, True)-}}
-
+{{template_label.label(field) | indent(0, True)| trim('\n')}}
+{{template_string.string(field, tabela) | indent(0, True)| trim('\n')}}
 {% endif %}
 {% endfor %}
 {% endmacro %}

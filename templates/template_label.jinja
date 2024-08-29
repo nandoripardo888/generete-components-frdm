@@ -2,7 +2,7 @@
 object hbox{{ data.Name | to_camel_case}}: TFHBox
   Left = 0
   Top = 0
-  Width = 77
+  Width = {{data.Caption | calcular_tamanho_componente_label}}
   Height = 27
   AutoWrap = False
   BevelKind = bkTile
@@ -38,11 +38,11 @@ object hbox{{ data.Name | to_camel_case}}: TFHBox
   object lbl{{data.Name | to_camel_case}}: TFLabel
     Left = 5
     Top = 0
-    Width = 71
+    Width = {{data.Caption | calcular_tamanho_componente_label}}
     Height = 18
     Align = alRight
     Anchors = []
-    Caption = '{{label.Caption}}'
+    Caption = '{{data.Caption | title }}'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -15

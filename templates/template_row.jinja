@@ -1,5 +1,5 @@
 {% import 'template_field.jinja' as template_field %}
-{% macro row(data) %}
+{% macro row(data, tabela) %}
 {% for linha in data | groupby('lin') %}
 object hboxLinha{{linha.groupby}}: TFHBox
   Width = 745
@@ -35,7 +35,7 @@ object hboxLinha{{linha.groupby}}: TFHBox
   BorderRadius.TopRight = 0
   BorderRadius.BottomRight = 0
   BorderRadius.BottomLeft = 0
-{{template_field.field(linha.list) | indent(2, True)-}}
+{{template_field.field(linha.list, tabela) | indent(2, True)|trim('\n')}}
 end
 {% endfor %}
 {% endmacro %}
