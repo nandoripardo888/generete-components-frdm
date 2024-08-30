@@ -1,0 +1,34 @@
+{% macro integer(data, tabela) %}
+object ed{{data.Name | to_camel_case}}: TFInteger
+  Width = 150
+  Height = 24
+  Hint = ''
+  Table = {{tabela}}
+  FieldName = '{{ data.Name }}'
+  HelpCaption = ''
+  TabOrder = 0
+  AccessLevel = 0
+  Flex = True
+  WOwner = FrInterno
+  WOrigem = EhNone
+  Required = False
+  Prompt = ''
+  Constraint.Expression = 'value is null'
+  Constraint.Message = 'Campo "{{data.Caption | title}}", preenchimento '#233' obrigat'#243'rio'
+  Constraint.CheckWhen = cwImmediate
+  Constraint.CheckType = ctExpression
+  Constraint.FocusOnError = True
+  Constraint.GroupName = 'regrasCheck{{tabela | capitalize}}'
+  Constraint.EnableUI = True
+  Constraint.Enabled = False
+  Constraint.FormCheck = True
+  IconDirection = idLeft
+  Maxlength = 0
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Alignment = taRightJustify
+end
+{% endmacro %}

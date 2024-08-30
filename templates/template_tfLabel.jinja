@@ -2,7 +2,7 @@
 object hbox{{ data.Name | to_camel_case}}: TFHBox
   Left = 0
   Top = 0
-  Width = {{data.Caption | calcular_tamanho_componente_label}}
+  Width = {{data.tamanhoComponente}}
   Height = 27
   AutoWrap = False
   BevelKind = bkTile
@@ -38,7 +38,7 @@ object hbox{{ data.Name | to_camel_case}}: TFHBox
   object lbl{{data.Name | to_camel_case}}: TFLabel
     Left = 5
     Top = 0
-    Width = {{data.Caption | calcular_tamanho_componente_label}}
+    Width = {{data.tamanhoComponente}}
     Height = 18
     Align = alRight
     Anchors = []

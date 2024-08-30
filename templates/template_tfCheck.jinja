@@ -1,0 +1,62 @@
+{% macro check(data, tabela) %}
+object hBox{{data.Name | to_camel_case}}: TFHBox
+  Width = {{data.tamanhoComponente}}
+  Height = 34
+  AutoWrap = False
+  BevelKind = bkTile
+  BevelOuter = bvNone
+  BorderStyle = stNone
+  Caption = ' '
+  Padding.Top = 3
+  Padding.Left = 0
+  Padding.Right = 0
+  Padding.Bottom = 0
+  TabOrder = 2
+  Margin.Top = 0
+  Margin.Left = 0
+  Margin.Right = 0
+  Margin.Bottom = 0
+  Spacing = 1
+  Flex.Vflex = ftFalse
+  Flex.Hflex = ftFalse
+  Scrollable = False
+  WOwner = FrInterno
+  WOrigem = EhNone
+  BoxShadowConfig.HorizontalLength = 10
+  BoxShadowConfig.VerticalLength = 10
+  BoxShadowConfig.BlurRadius = 5
+  BoxShadowConfig.SpreadRadius = 0
+  BoxShadowConfig.ShadowColor = clBlack
+  BoxShadowConfig.Opacity = 75
+  VAlign = tvTop
+  BorderRadius.TopLeft = 0
+  BorderRadius.TopRight = 0
+  BorderRadius.BottomRight = 0
+  BorderRadius.BottomLeft = 0
+  object ed{{data.Name | to_camel_case}}: TFCheckBox
+    Width = {{data.tamanhoComponente}}
+	  Height = 21
+	  Hint = ''
+	  Align = alClient
+	  Caption = '{{data.Caption | title }}'
+	  Font.Charset = DEFAULT_CHARSET
+	  Font.Color = clWindowText
+	  Font.Height = -15
+	  Font.Name = 'Tahoma'
+	  Font.Style = []
+	  ParentFont = False
+	  TabOrder = 0
+	  Table = {{tabela}}
+	  FieldName = '{{data.Name}}'
+	  CheckedValue = 'S'
+	  UncheckedValue = 'N'
+	  HelpCaption = ''
+	  Help = ''
+	  ReadOnly = False
+	  WOwner = FrInterno
+	  WOrigem = EhNone
+	  WKey = '7000192;70002;70006'
+	  VerticalAlignment = taAlignBottom
+  end
+end
+{% endmacro %}

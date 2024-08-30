@@ -1,0 +1,38 @@
+{% macro combo(data, tabela) %}
+object ed{{data.Name | to_camel_case}}: TFCombo
+  Width = 150
+  Height = 21
+  Hint = ''
+  Table = {{tabela}}
+  FieldName = '{{data.Name}}'
+  LookupKey = ''
+  LookupDesc = ''
+  Flex = True
+  HelpCaption = ''
+  Help = ''
+  ReadOnly = False
+  WOwner = FrInterno
+  WOrigem = EhNone
+  Required = False
+  Prompt = 'Selecione'
+  Constraint.Expression = 'value is null'
+  Constraint.Message = 'Campo "{{data.Caption | title}}", preenchimento '#233' obrigat'#243'rio'
+  Constraint.CheckWhen = cwImmediate
+  Constraint.CheckType = ctExpression
+  Constraint.FocusOnError = True
+  Constraint.GroupName = 'regrasCheck{{tabela | capitalize}}'
+  Constraint.EnableUI = True
+  Constraint.Enabled = False
+  Constraint.FormCheck = True
+  ClearOnDelKey = True
+  UseClearButton = False
+  HideClearButtonOnNullValue = False
+  Align = alLeft
+  Colors = <>
+  Images = <>
+  Masks = <>
+  Fonts = <>
+  MultiSelection = False
+  IconReverseDirection = False
+end
+{% endmacro %}

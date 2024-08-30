@@ -1,30 +1,82 @@
 object tbPerguntas: TFTable
     FieldDefs = <
       item
-        Name = 'COD_QUESTIONARIO'
+        Name = 'TF_STRING'
         Calculated = False
         Updatable = False
         PrimaryKey = True
         FieldType = ftString
         JSONConfig.NullOnEmpty = False
-        Caption = 'C'#243'd. Questionario'
+        Caption = 'campo tipo tfString'
         WOwner = FrWizard
         WOrigem = EhNone
         lin = 1
         col = 1
       end
       item
-        Name = 'COD_PERGUNTA'
+        Name = 'TF_INTEGER'
         Calculated = False
         Updatable = False
         PrimaryKey = True
-        FieldType = ftString
+        FieldType = ftInteger
         JSONConfig.NullOnEmpty = False
-        Caption = 'C'#243'd. Pergunta'
+        Caption = 'campo tipo tfInteger'
         WOwner = FrWizard
         WOrigem = EhNone
         lin = 1
         col = 2
+      end
+      item
+        Name = 'TF_COMBO'
+        Calculated = False
+        Updatable = False
+        PrimaryKey = True
+        FieldType = ftCombo
+        JSONConfig.NullOnEmpty = False
+        Caption = 'campo tipo tfCombo'
+        WOwner = FrWizard
+        WOrigem = EhNone
+        lin = 3
+        col = 1
+      end
+      item
+        Name = 'TF_DATE'
+        Calculated = False
+        Updatable = False
+        PrimaryKey = True
+        FieldType = ftDate
+        JSONConfig.NullOnEmpty = False
+        Caption = 'campo tipo tfDate'
+        WOwner = FrWizard
+        WOrigem = EhNone
+        lin = 4
+        col = 1
+      end
+      item
+        Name = 'TF_MEMO'
+        Calculated = False
+        Updatable = False
+        PrimaryKey = True
+        FieldType = ftMemo
+        JSONConfig.NullOnEmpty = False
+        Caption = 'campo tipo tfMemo'
+        WOwner = FrWizard
+        WOrigem = EhNone
+        lin = 5
+        col = 1
+      end
+      item
+        Name = 'TF_CHECK'
+        Calculated = False
+        Updatable = False
+        PrimaryKey = True
+        FieldType = ftCheck
+        JSONConfig.NullOnEmpty = False
+        Caption = 'campo tipo tfCheck'
+        WOwner = FrWizard
+        WOrigem = EhNone
+        lin = 6
+        col = 1
       end>
     TableName = 'CRM_PERGUNTAS'
     Cursor = 'CRM_PERGUNTAS'

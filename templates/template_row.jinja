@@ -1,9 +1,9 @@
 {% import 'template_field.jinja' as template_field %}
 {% macro row(data, tabela) %}
 {% for linha in data | groupby('lin') %}
-object hboxLinha{{linha.groupby}}: TFHBox
+object hboxLinha{{tabela | capitalize}}{{linha.grouper}}: TFHBox
   Width = 745
-  Height = 34
+  Height = 30
   AutoWrap = False
   BevelKind = bkTile
   BevelOuter = bvNone
@@ -19,7 +19,7 @@ object hboxLinha{{linha.groupby}}: TFHBox
   Margin.Right = 0
   Margin.Bottom = 0
   Spacing = 4
-  Flex.Vflex = ftFalse
+  Flex.Vflex = ftMin
   Flex.Hflex = ftTrue
   Scrollable = False
   WOwner = FrInterno

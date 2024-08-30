@@ -1,10 +1,34 @@
-{% import 'template_label.jinja' as template_label %}
-{% import 'template_string.jinja' as template_string %}
+{% import 'template_tfLabel.jinja' as template_label %}
+{% import 'template_tfString.jinja' as template_string %}
+{% import 'template_tfInteger.jinja' as template_integer %}
+{% import 'template_tfCombo.jinja' as template_combo %}
+{% import 'template_tfDate.jinja' as template_date %}
+{% import 'template_tfMemo.jinja' as template_memo%}
+{% import 'template_tfCheck.jinja' as template_check %}
 {% macro field(data, tabela) %}
 {% for field in data %}
 {% if field.FieldType == 'ftString' %}
 {{template_label.label(field) | indent(0, True)| trim('\n')}}
 {{template_string.string(field, tabela) | indent(0, True)| trim('\n')}}
+{% endif %}
+{% if field.FieldType == 'ftInteger' %}
+{{template_label.label(field) | indent(0, True)| trim('\n')}}
+{{template_integer.integer(field, tabela) | indent(0, True)| trim('\n')}}
+{% endif %}
+{% if field.FieldType == 'ftCombo' %}
+{{template_label.label(field) | indent(0, True)| trim('\n')}}
+{{template_combo.combo(field, tabela) | indent(0, True)| trim('\n')}}
+{% endif %}
+{% if field.FieldType == 'ftDate' %}
+{{template_label.label(field) | indent(0, True)| trim('\n')}}
+{{template_date.date(field, tabela) | indent(0, True)| trim('\n')}}
+{% endif %}
+{% if field.FieldType == 'ftMemo' %}
+{{template_label.label(field) | indent(0, True)| trim('\n')}}
+{{template_memo.memo(field, tabela) | indent(0, True)| trim('\n')}}
+{% endif %}
+{% if field.FieldType == 'ftCheck' %}
+{{template_check.check(field, tabela) | indent(0, True)| trim('\n')}}
 {% endif %}
 {% endfor %}
 {% endmacro %}

@@ -1,7 +1,5 @@
 {% macro string(data, tabela) %}
 object ed{{data.Name | to_camel_case}}: TFString
-  Left = 77
-  Top = 0
   Width = 150
   Height = 24
   Hint = ''
@@ -17,7 +15,7 @@ object ed{{data.Name | to_camel_case}}: TFString
   Required = False
   Prompt = ''
   Constraint.Expression = 'value is null or trim(value) = '#39#39
-  Constraint.Message = 'Campo {{data.Caption | title}}, preenchimento '#233' obrigat'#243'rio'
+  Constraint.Message = 'Campo "{{data.Caption | title}}", preenchimento '#233' obrigat'#243'rio'
   Constraint.CheckWhen = cwImmediate
   Constraint.CheckType = ctExpression
   Constraint.FocusOnError = True
