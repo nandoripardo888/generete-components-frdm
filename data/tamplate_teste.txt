@@ -49,8 +49,8 @@ object tbPerguntas: TFTable
         Caption = 'campo tipo tfDate'
         WOwner = FrWizard
         WOrigem = EhNone
-        lin = 4
-        col = 1
+        lin = 3
+        col = 2
       end
       item
         Name = 'TF_MEMO'

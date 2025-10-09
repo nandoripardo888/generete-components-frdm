@@ -1,0 +1,418 @@
+object tbGarantiaVwSg: TFTable
+    FieldDefs = <
+      item
+        Name = 'DN'
+        Calculated = False
+        Updatable = False
+        PrimaryKey = False
+        FieldType = ftString
+        JSONConfig.NullOnEmpty = False
+        Caption = 'DN'
+        GUID = '{6DB470A5-243A-4421-83F7-4C667D269E2C}'
+        WOwner = FrWizard
+        WOrigem = EhNone
+        lin = 1
+        col = 1
+      end
+      item
+        Name = 'NUMERO_SG'
+        Calculated = False
+        Updatable = False
+        PrimaryKey = False
+        FieldType = ftString
+        JSONConfig.NullOnEmpty = False
+        Caption = 'N'#186' SG'
+        GUID = '{5EBC4161-76F7-4FAA-9ADC-BD42A984446C}'
+        WOwner = FrWizard
+        WOrigem = EhNone
+        lin = 1
+        col = 2
+      end
+      item
+        Name = 'ID_TIPO'
+        Calculated = False
+        Updatable = False
+        PrimaryKey = False
+        FieldType = ftCombo
+        JSONConfig.NullOnEmpty = False
+        Caption = 'Tipo Garantia'
+        GUID = '{91027CD4-64C7-47E0-B33B-F06AD9A466EA}'
+        WOwner = FrWizard
+        WOrigem = EhNone
+        lin = 1
+        col = 3
+      end
+      item
+        Name = 'ORIGEM'
+        Calculated = False
+        Updatable = False
+        PrimaryKey = False
+        FieldType = ftCombo
+        JSONConfig.NullOnEmpty = False
+        Caption = 'Origem'
+        GUID = '{A6C4C569-1C8B-4D1B-A904-6C81580D3690}'
+        WOwner = FrWizard
+        WOrigem = EhNone
+        lin = 1
+        col = 4
+      end
+      item
+        Name = 'COD_CONSULTOR'
+        Calculated = False
+        Updatable = False
+        PrimaryKey = False
+        FieldType = ftString
+        JSONConfig.NullOnEmpty = False
+        Caption = 'Consultor t'#233'cnico'
+        GUID = '{D503A7A1-EB3C-452C-9007-53F17F427F60}'
+        WOwner = FrWizard
+        WOrigem = EhNone
+        lin = 2
+        col = 1
+      end
+      item
+        Name = 'COD_EMPRESA'
+        Calculated = False
+        Updatable = False
+        PrimaryKey = False
+        FieldType = ftString
+        JSONConfig.NullOnEmpty = False
+        Caption = 'Modo Cont'#225'bil'
+        GUID = '{2856C0B6-16BA-4BA7-BA81-507AAB6EC2C8}'
+        WOwner = FrWizard
+        WOrigem = EhNone
+        lin = 2
+        col = 2
+      end
+      item
+        Name = 'COD_APOS'
+        Calculated = False
+        Updatable = False
+        PrimaryKey = False
+        FieldType = ftCombo
+        JSONConfig.NullOnEmpty = False
+        Caption = 'APOS.-Sit.Cod.Ope.Sr'#231
+        GUID = '{59A180C6-C23B-4564-A275-BA69A5FC2F57}'
+        WOwner = FrWizard
+        WOrigem = EhNone
+        lin = 2
+        col = 3
+      end
+      item
+        Name = 'CONSIDERACAO'
+        Calculated = False
+        Updatable = False
+        PrimaryKey = False
+        FieldType = ftCombo
+        JSONConfig.NullOnEmpty = False
+        Caption = 'Considera'#231#227'o'
+        GUID = '{F1BD3679-367C-4919-9D4D-564AE1C73909}'
+        WOwner = FrWizard
+        WOrigem = EhNone
+        lin = 2
+        col = 4
+      end
+      item
+        Name = 'CHASSI'
+        Calculated = False
+        Updatable = False
+        PrimaryKey = False
+        FieldType = ftString
+        JSONConfig.NullOnEmpty = False
+        Caption = 'VIN - N'#186' chassis'
+        GUID = '{1D0FB993-73E9-46F5-80D1-CD5563E02149}'
+        WOwner = FrWizard
+        WOrigem = EhNone
+        lin = 3
+        col = 1
+      end
+      item
+        Name = 'DATA_ENTREGA'
+        Calculated = False
+        Updatable = False
+        PrimaryKey = False
+        FieldType = ftDate
+        JSONConfig.NullOnEmpty = False
+        Caption = 'Data da Entrega'
+        GUID = '{7D3A710A-C882-4586-817F-B10D332A29AC}'
+        WOwner = FrWizard
+        WOrigem = EhNone
+        lin = 3
+        col = 2
+      end
+      item
+        Name = 'DATA_RECEPCAO'
+        Calculated = False
+        Updatable = False
+        PrimaryKey = False
+        FieldType = ftDate
+        JSONConfig.NullOnEmpty = False
+        Caption = 'Data Recep'#231#227'o'
+        GUID = '{1A3D53C4-D024-441D-8DC4-2B7F83D11AF8}'
+        WOwner = FrWizard
+        WOrigem = EhNone
+        lin = 3
+        col = 3
+      end
+      item
+        Name = 'COD_FABRICANTE'
+        Calculated = False
+        Updatable = False
+        PrimaryKey = False
+        FieldType = ftCombo
+        JSONConfig.NullOnEmpty = False
+        Caption = 'Fabricantes'
+        GUID = '{EA0171EE-92E1-45CE-982A-E093E3B52E44}'
+        WOwner = FrWizard
+        WOrigem = EhNone
+        lin = 3
+        col = 4
+      end
+      item
+        Name = 'UNIDADE'
+        Calculated = False
+        Updatable = False
+        PrimaryKey = False
+        FieldType = ftCombo
+        JSONConfig.NullOnEmpty = False
+        Caption = 'Unidade'
+        GUID = '{50C2BD46-573F-4283-82D8-2ABDAB517F73}'
+        WOwner = FrWizard
+        WOrigem = EhNone
+        lin = 4
+        col = 1
+      end
+      item
+        Name = 'KM'
+        Calculated = False
+        Updatable = False
+        PrimaryKey = False
+        FieldType = ftInteger
+        JSONConfig.NullOnEmpty = False
+        Caption = 'Km/milhas'
+        GUID = '{8B4FF2FD-1487-437F-B340-B0907DC370E5}'
+        WOwner = FrWizard
+        WOrigem = EhNone
+        lin = 4
+        col = 2
+      end
+      item
+        Name = 'KM_MONTAGEM'
+        Calculated = False
+        Updatable = False
+        PrimaryKey = False
+        FieldType = ftInteger
+        JSONConfig.NullOnEmpty = False
+        Caption = 'Km/milhas na montagem'
+        GUID = '{DDF430B3-DA7B-4701-AF04-5A7B9EED9A5B}'
+        WOwner = FrWizard
+        WOrigem = EhNone
+        lin = 4
+        col = 3
+      end
+      item
+        Name = 'DATA_MONTAGEM'
+        Calculated = False
+        Updatable = False
+        PrimaryKey = False
+        FieldType = ftDate
+        JSONConfig.NullOnEmpty = False
+        Caption = 'Data de montagem'
+        GUID = '{64A200B4-6D4D-4D42-ADE7-BA8A9D36CA02}'
+        WOwner = FrWizard
+        WOrigem = EhNone
+        lin = 4
+        col = 4
+      end
+      item
+        Name = 'PERIODO_HORA'
+        Calculated = False
+        Updatable = False
+        PrimaryKey = False
+        FieldType = ftDecimal
+        JSONConfig.NullOnEmpty = False
+        Caption = 'Per'#237'odo em horas'
+        GUID = '{F18355A6-AFBC-4B9C-AA6B-C6A1DCAB43C1}'
+        WOwner = FrWizard
+        WOrigem = EhNone
+        lin = 4
+        col = 5
+      end
+      item
+        Name = 'COD_AT'
+        Calculated = False
+        Updatable = False
+        PrimaryKey = False
+        FieldType = ftString
+        JSONConfig.NullOnEmpty = False
+        Caption = 'N'#186' AT'
+        GUID = '{7AA53889-7CF4-4273-941C-41038745F9FA}'
+        WOwner = FrWizard
+        WOrigem = EhNone
+        lin = 5
+        col = 1
+      end
+      item
+        Name = 'COD_TIPO_DANO'
+        Calculated = False
+        Updatable = False
+        PrimaryKey = False
+        FieldType = ftString
+        JSONConfig.NullOnEmpty = False
+        Caption = 'Tipo de dano'
+        GUID = '{9C832C04-4309-4716-84DD-95BC89E84E17}'
+        WOwner = FrWizard
+        WOrigem = EhNone
+        lin = 5
+        col = 2
+      end
+      item
+        Name = 'COD_LOCAL_DANO'
+        Calculated = False
+        Updatable = False
+        PrimaryKey = False
+        FieldType = ftString
+        JSONConfig.NullOnEmpty = False
+        Caption = 'Local do Dano'
+        GUID = '{70CA3002-DE54-4CB1-BEF7-59641570E792}'
+        WOwner = FrWizard
+        WOrigem = EhNone
+        lin = 5
+        col = 3
+      end
+      item
+        Name = 'DATA_REPARO_DANO'
+        Calculated = False
+        Updatable = False
+        PrimaryKey = False
+        FieldType = ftDate
+        JSONConfig.NullOnEmpty = False
+        Caption = 'Data Reparo'
+        GUID = '{E19D3156-8A4A-4AA6-B1FC-9469011396D2}'
+        WOwner = FrWizard
+        WOrigem = EhNone
+        lin = 6
+        col = 1
+      end
+      item
+        Name = 'NUMERO_MTP'
+        Calculated = False
+        Updatable = False
+        PrimaryKey = False
+        FieldType = ftString
+        JSONConfig.NullOnEmpty = False
+        Caption = 'N'#186' MTP'
+        GUID = '{68FF99EB-AB14-4DAC-A9B1-4C268ADC0C93}'
+        WOwner = FrWizard
+        WOrigem = EhNone
+        lin = 6
+        col = 2
+      end
+      item
+        Name = 'PECA_CAUSADORA'
+        Calculated = False
+        Updatable = False
+        PrimaryKey = False
+        FieldType = ftString
+        JSONConfig.NullOnEmpty = False
+        Caption = 'N'#186' da pe'#231'a causadora do dano'
+        GUID = '{6ACAF913-34A2-4A7E-A38D-9C67F8E94010}'
+        WOwner = FrWizard
+        WOrigem = EhNone
+        lin = 6
+        col = 3
+      end
+      item
+        Name = 'EH_PANE'
+        Calculated = False
+        Updatable = False
+        PrimaryKey = False
+        FieldType = ftCheck
+        JSONConfig.NullOnEmpty = False
+        Caption = 'Ve'#237'culo de PANE'
+        GUID = '{9370A2FB-F965-4C2C-BEE2-F6182D8AA836}'
+        WOwner = FrWizard
+        WOrigem = EhNone
+        lin = 6
+        col = 4
+      end
+      item
+        Name = 'PECA_DESMONTADA'
+        Calculated = False
+        Updatable = False
+        PrimaryKey = False
+        FieldType = ftString
+        JSONConfig.NullOnEmpty = False
+        Caption = 'Pe'#231'a desmontada'
+        GUID = '{66026E33-9407-437E-82F2-9EFE0C46E9E7}'
+        WOwner = FrWizard
+        WOrigem = EhNone
+        lin = 7
+        col = 1
+      end
+      item
+        Name = 'MOD_DESMONTADO'
+        Calculated = False
+        Updatable = False
+        PrimaryKey = False
+        FieldType = ftString
+        JSONConfig.NullOnEmpty = False
+        Caption = 'M'#243'dulo desmontado'
+        GUID = '{344D7E27-0C68-4D12-A94D-6F26599F6A5E}'
+        WOwner = FrWizard
+        WOrigem = EhNone
+        lin = 7
+        col = 2
+      end
+      item
+        Name = 'PECA_MONTADA'
+        Calculated = False
+        Updatable = False
+        PrimaryKey = False
+        FieldType = ftString
+        JSONConfig.NullOnEmpty = False
+        Caption = 'Pe'#231'a montada'
+        GUID = '{D1BD24BF-2951-4D2B-895B-210A53BDF282}'
+        WOwner = FrWizard
+        WOrigem = EhNone
+        lin = 7
+        col = 3
+      end
+      item
+        Name = 'MOD_MONTADO'
+        Calculated = False
+        Updatable = False
+        PrimaryKey = False
+        FieldType = ftString
+        JSONConfig.NullOnEmpty = False
+        Caption = 'M'#243'dulo montado'
+        GUID = '{11791C70-86FD-4C43-9660-EA8633F13CF0}'
+        WOwner = FrWizard
+        WOrigem = EhNone
+        lin = 7
+        col = 4
+      end
+      item
+        Name = 'OBS_COMENTARIO'
+        Calculated = False
+        Updatable = False
+        PrimaryKey = False
+        FieldType = ftMemo
+        JSONConfig.NullOnEmpty = False
+        Caption = 'Coment'#225'rio'
+        GUID = '{C1DECF61-8200-4F8E-AC2E-2272340DC750}'
+        WOwner = FrWizard
+        WOrigem = EhNone
+        lin = 8
+        col = 1
+      end>
+    TableName = 'GARANTIA_VW_SG'
+    Cursor = 'GARANTIA_VW_SG'
+    MaxRowCount = 200
+    WOwner = FrWizard
+    WOrigem = EhNone
+    WKey = '599031;59901'
+    DeltaMode = dmChanged
+    RatioBatchSize = 20
+    ModelType = mtCollectionModel
+end
